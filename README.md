@@ -7,6 +7,7 @@ What we need:
 
 •	R packages: 
 phyloseq, ape, phangorn, phytools, geiger,  scales, car
+
 scDoc from https://github.com/anlingUA/scDoc/blob/master/scDoc_0.0.0.9.tar.gz
 
 ## Example code ##
