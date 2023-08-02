@@ -3,25 +3,26 @@ Two imputation methods, PhyImpute and UniFracImpute, identify and impute non-bio
 
 What we need:
 
-•	R version 3.6.1
+•	R 3.6.1 or later version
 
 •	R package: phyloseq, ape, phangorn, phytools, geiger, scDoc, scales, car
 
-####### load phylogenetic tree and input data ##############
+## Example code ##
+## load phylogenetic tree and raw count data ##
 
 phytree <- read.tree(file="phylotree.tre")
 
 otu.tab <- read.csv("otu_example.csv",row.names = 1,check.names = FALSE)
 
-####### PhyImpute ##############
+####### Perform PhyImpute Imputation ##############
 
 output1<-phyimpute(otudata=otu.tab, tree=phytree)
 
-####### UniFracImpute ###########
+####### Perform UniFracImpute Imputation ###########
 
 output2 <- unifracimpute(otudata=otu.tab, tree=phytree)
 
 ####### Plot the Results ##########
 
 plot(output1, main="PhyImpute")
-
+plot(output2, main="UniFracImpute")
