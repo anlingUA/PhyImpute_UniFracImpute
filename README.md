@@ -5,7 +5,7 @@ What we need:
 
 •	R 3.6.1 or later version
 
-•	R package: phyloseq, ape, phangorn, phytools, geiger, scDoc, scales, car
+•	R packages: phyloseq, ape, phangorn, phytools, geiger, scDoc, scales, car
 
 ## Example code ##
 ## load phylogenetic tree and raw count data ##
